@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Restaurant - Delicious Meals</title>
+  <link rel="shortcut icon" href="./images/title-logo.png" type="image/x-icon" />
+
+  <!-- ----linked font awesome cdn---- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ----linked style.css file---- -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- ----linked media.css file---- -->
+  <link rel="stylesheet" href="./media.css" />
+</head>
+
+<body>
+  <!-- ====markup header element==== -->
+  <header class="header">
+    <!-- ---header logo--- -->
+    <div class="header-logo">
+      <img src="./images/logo-img.png" alt="Restaurant Logo" />
+    </div>
+
+    <!-- ---navigation--- -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li>
+          <a class="active" href="#home">home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#menu">menu</a>
+        </li>
+        <li>
+          <a href="#popular">popular</a>
+        </li>
+        <li>
+          <a href="#gallery">gallery</a>
+        </li>
+        <li>
+          <a href="#order">order</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ---menu bar--- -->
+    <div id="menu-bar" class="bars" aria-label="Toggle menu"></div>
+  </header>
+
+  <!-- ====markup main element==== -->
+  <main>
+    <!-- ====markup home section==== -->
+    <section id="home" class="home">
+      <div class="home-desc">
+        <h1>we believe good food offers great smiles</h1>
+        <p>
+          Experience the finest culinary delights prepared with fresh ingredients and passion. 
+          Our chefs create memorable dining experiences that bring joy to every meal.
+        </p>
+        <input type="button" value="get started" />
+      </div>
+
+      <div class="home-image">
+        <img src="./images/home-img.png" alt="Delicious food presentation" />
+      </div>
+    </section>
+
+    <!-- ====markup about section==== -->
+    <section id="about" class="about">
+      <div class="about-image">
+        <img src="./images/about-frame-img.png" alt="Our restaurant interior" />
+      </div>
+
+      <div class="about-desk">
+        <h2>a word about us</h2>
+        <p>
+          We are passionate about creating exceptional dining experiences that combine traditional 
+          flavors with modern culinary techniques. Our commitment to quality ingredients and 
+          outstanding service has made us a favorite destination for food lovers.
+        </p>
+        <p>
+          From our humble beginnings to becoming a renowned restaurant, we continue to innovate 
+          while staying true to our core values of quality, freshness, and customer satisfaction.
+        </p>
+
+        <input type="button" value="learn more" />
+      </div>
+    </section>
+
+    <!-- ====markup menu section==== -->
+    <section id="menu" class="menu">
+      <h2>our delicious <span>menu</span></h2>
+      <div class="catagory">
+        <input type="button" value="breakfast" aria-label="View breakfast menu" />
+        <input type="button" class="active" value="lunch" aria-label="View lunch menu" />
+        <input type="button" value="dinner" aria-label="View dinner menu" />
+        <input type="button" value="dessert" aria-label="View dessert menu" />
+      </div>
+
+      <div class="catagory-img">
+        <img id="c-img" src="./images/menu-lunch.jpg" alt="Featured menu items" />
+      </div>
+
+      <!-- ---info content--- -->
+      <div class="menu-content">
+        <div class="info">
+          <h3><span>01.</span>fresh ingredients daily</h3>
+          <p>
+            We source the finest ingredients every morning to ensure maximum freshness and flavor 
+            in every dish we serve.
+          </p>
+        </div>
+
+        <div class="info">
+          <h3><span>02.</span>expertly crafted recipes</h3>
+          <p>
+            Our experienced chefs blend traditional techniques with innovative approaches to create 
+            unique and memorable flavors.
+          </p>
+        </div>
+
+        <div class="info">
+          <h3><span>03.</span>sustainable practices</h3>
+          <p>
+            We're committed to environmental responsibility through sustainable sourcing and 
+            eco-friendly cooking practices.
+          </p>
+        </div>
+
+        <div class="info">
+          <h3><span>04.</span>exceptional service</h3>
+          <p>
+            Our dedicated team ensures every guest receives personalized attention and an 
+            unforgettable dining experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====markup popular section==== -->
+    <section id="popular" class="popular">
+      <h2>most <span>popular</span> foods</h2>
+
+      <div class="popular-content">
+        <!-- ---card 01--- -->
+        <div class="p-card">
+          <img src="./images/product-1.jpg" alt="Grilled chicken with vegetables" />
+          <h4>signature grilled chicken</h4>
+          <div class="review" aria-label="5 star rating">
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+          </div>
+          <p class="price">$25.99</p>
+          <input type="button" value="add to cart" />
+        </div>
+
+        <!-- ---card 02--- -->
+        <div class="p-card">
+          <img src="./images/product-2.jpg" alt="Fresh salmon with herbs" />
+          <h4>herb-crusted salmon</h4>
+          <div class="review" aria-label="5 star rating">
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+          </div>
+          <p class="price">$32.99</p>
+          <input type="button" value="add to cart" />
+        </div>
+
+        <!-- ---card 03--- -->
+        <div class="p-card">
+          <img src="./images/product-3.jpg" alt="Pasta with homemade sauce" />
+          <h4>artisan pasta special</h4>
+          <div class="review" aria-label="5 star rating">
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+          </div>
+          <p class="price">$18.99</p>
+          <input type="button" value="add to cart" />
+        </div>
+
+        <!-- ---card 04--- -->
+        <div class="p-card">
+          <img src="./images/product-4.jpg" alt="Premium beef steak" />
+          <h4>premium beef steak</h4>
+          <div class="review" aria-label="5 star rating">
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+            <i class="star"></i>
+          </div>
+          <p class="price">$45.99</p>
+          <input type="button" value="add to cart" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====markup gallery section==== -->
+    <section id="gallery" class="gallery">
+      <h2>our food <span>gallery</span></h2>
+
+      <div class="gallery-content">
+        <!-- ---gallery card 01--- -->
+        <div class="g-card">
+          <img src="./images/img1.jpg" alt="Beautifully plated appetizer" />
+          <h3>gourmet appetizers</h3>
+        </div>
+
+        <!-- ---gallery card 02--- -->
+        <div class="g-card">
+          <img src="./images/img2.jpg" alt="Fresh salad with seasonal ingredients" />
+          <h3>fresh salads</h3>
+        </div>
+
+        <!-- ---gallery card 03--- -->
+        <div class="g-card">
+          <img src="./images/img3.jpg" alt="Artisanal bread and pastries" />
+          <h3>artisan breads</h3>
+        </div>
+
+        <!-- ---gallery card 04--- -->
+        <div class="g-card">
+          <img src="./images/img4.jpg" alt="Decadent chocolate dessert" />
+          <h3>chocolate delights</h3>
+        </div>
+
+        <!-- ---gallery card 05--- -->
+        <div class="g-card">
+          <img src="./images/img5.jpg" alt="Signature main course" />
+          <h3>signature dishes</h3>
+        </div>
+
+        <!-- ---gallery card 06--- -->
+        <div class="g-card">
+          <img src="./images/img6.jpg" alt="Fresh fruit dessert" />
+          <h3>fruit desserts</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====markup order section==== -->
+    <section id="order" class="order">
+      <h2>make an <span>order</span></h2>
+
+      <div class="order-content">
+        <form action="#" class="order-form" autocomplete="off">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required />
+          
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          
+          <label for="phone" class="sr-only">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+          
+          <label for="address" class="sr-only">Delivery Address</label>
+          <textarea id="address" name="address" cols="30" rows="8" placeholder="Delivery Address" required></textarea>
+
+          <button type="submit">Order now</button>
+        </form>
+        <img src="./images/form-img.jpg" alt="Fresh ingredients for cooking" />
+      </div>
+    </section>
+  </main>
+
+  <!-- ====markup footer element==== -->
+  <footer class="footer">
+    <div class="contact-info">
+      <h4>contact info</h4>
+      <p>
+        <i class="location-dot"></i><span>123 Food Street</span>
+      </p>
+      <p><i class="envelope"></i> <span>info@foodrestaurant.com</span></p>
+      <p><i class="phone"></i> <span>1234567</span></p>
+    </div>
+
+    <div class="location">
+      <h4>branch locations</h4>
+      <ul>
+        <li><a href="#">location a</a></li>
+        <li><a href="#">location b</a></li>
+        <li><a href="#">location c</a></li>
+        <li><a href="#">location d</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-links">
+      <h4>quick links</h4>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#menu">menu</a></li>
+        <li><a href="#popular">popular</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#order">order</a></li>
+      </ul>
+    </div>
+
+    <div class="follow-us">
+      <h4>follow us</h4>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">instagram</a>
+        </li>
+        <li><a href="https://www.twitter.com" target="_blank" rel="noopener">twitter</a></li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ----linked main.js file---- -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
